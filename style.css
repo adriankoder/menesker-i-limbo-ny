@@ -96,8 +96,8 @@ p {
   justify-content: space-evenly;
   align-items: center;
   width: 30rem;
-  height: auto;
-  padding-left: 50px;
+  height: 30rem;
+  /* padding-left: 50px; */
 }
 /* .folk_president {
   display: flex;
