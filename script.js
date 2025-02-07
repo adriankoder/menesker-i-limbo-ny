@@ -23,7 +23,15 @@ hovedside.addEventListener("click", () => {
 
 omArbeidet.addEventListener("click", () => {
   meneskerILombo.innerHTML = `<p> Hvem er vi?
-Gruppen består av langvarige papirløse asylsøkere, inkludert kvinner, menn og barn, som har flyktet til Norge. De kjemper for:</p>
+  Gruppen består av lengeværende papirløse asylsøkere, inkludert kvinner, menn og barn, som har flyktet til Norge. De kjemper for:</p>
+
+<p><li>Arbeid</li><br>
+<li>Skolegang</li><br>
+<li>Helsehjelp</li><br>
+<li>Økonomiske velferdstjenester</p>
+</li>
+
+
 Papirløse eller irregulære migranter er personer som oppholder seg i Norge uten lovlig opphold. Mange er asylsøkere med endelig avslag. Flere i denne gruppen bor på asylmottak, særlig barnefamilier.
 
 De irregulære migrantene som, i frykt for tvangsretur eller av andre årsaker, velger å ikke bo på asylmottak – eller som ikke har rett til mottaksplass – lever på kanten av det norske samfunnet. De livnærer seg på uformell sosial støtte eller illegalt arbeid og er ekskludert fra det offentlige støtteapparatet.<br><br>
@@ -33,13 +41,7 @@ Risikoen for utnyttelse er stor, både når det gjelder menneskehandel, andre ov
 Både psykisk og somatisk helse kan være dårlig.
 De kan ha helsetilstander som kunne vært behandlet,
 men som utvikler seg til kroniske eller livstruende tilstander fordi de forblir ubehandlet.
-I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfordringer.
-
-<p><li>Arbeid</li><br>
-<li>Skolegang</li><br>
-<li>Helsehjelp</li><br>
-<li>Økonomiske velferdstjenester</p>
-</li>`;
+I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfordringer.`;
 
   liID.style.display = "none"; // Skjul liID
   bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
