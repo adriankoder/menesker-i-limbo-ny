@@ -1,16 +1,28 @@
+@media screen and (max-width: 600px) {
+
+
 body {
   margin: 0;
   padding: 0;
   background-color: brown;
+  max-width: fit-content;
+}
+.liID {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-size: 40px;
 }
 .bilde {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
-  padding-bottom: 100px;
+  width: 12px;
+  height: 12px;
 }
 .li {
   display: flex;
@@ -93,3 +105,4 @@ button {
   font-size: 40px;
   font-size: 40px;
 } */
+}
