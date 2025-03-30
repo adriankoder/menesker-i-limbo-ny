@@ -169,3 +169,18 @@ p {
   width: 2rem;
   height: 2rem;
 }
+.QR{
+  width: 100px;
+  height: 100px;
+}
+.viktig {
+
+color: black;
+}
+.QRIfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 20%;
+}

@@ -49,7 +49,7 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
   bildeSomByttes.alt = "stand 19 okt 24 Torgallmenning";
   folk.style.display = "none";
   console.log(liID);
-
+});
   VaneligeSpørsmål.addEventListener("click", () => {
     console.log("VaneligeSpørsmål clicked");
     meneskerILombo.innerHTML = meneskerILombo.innerHTML = `
@@ -155,14 +155,16 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
 
   KontaktOss.addEventListener("click", () => {
     console.log("KontaktOss clicked");
+  
     meneskerILombo.innerHTML = `
     <p>Kontakt oss på telefon: <a href='tel:+4790038238233'>90038238233</a></p>
-    <p>Eller e-post: <a href='mailto:ketil_hindenes@hotmail.com'>ketil_hindenes@hotmail.com</a></p>
- <a href="https://vipps.no/pay?link=DIN_GENERERTE_LENKE" target="_blank">Betal med Vipps</a>
+    <p>Eller e-post: <a href='mailto:ketil_hindenes@hotmail.com'>ketil_hindenes@hotmail.com</a></p>`
+    
+//  <a href="https://vipps.no/pay?link=DIN_GENERERTE_LENKE" target="_blank">Betal med Vipps</a></a>  ;
 
-</a>
 
-  `;
+
+
     // Skjul liID
   });
-});
+
