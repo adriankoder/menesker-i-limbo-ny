@@ -43,7 +43,8 @@ Både psykisk og somatisk helse kan være dårlig.
 De kan ha helsetilstander som kunne vært behandlet,
 men som utvikler seg til kroniske eller livstruende tilstander fordi de forblir ubehandlet.
 I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfordringer.`;
-
+bildeSomByttes.style.width = "30rem"
+bildeSomByttes.style.height = "30rem"
   liID.style.display = "none"; // Skjul liID
   bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
   bildeSomByttes.alt = "stand 19 okt 24 Torgallmenning";
@@ -112,8 +113,11 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
       console.log("VaneligeSpørsmål clicked");
       meneskerILombo.innerHTML = `
       <button id='vaneligSpørsmålHvorfor'>Hvorfor reiser de ikke bare tilbake?</button>
-      <button id='hvaVilDeOppnå'>Hva vil de oppnå i Norge?</button>
-    `;
+      <button id='hvaVilDeOppnå'>Hva vil de oppnå i Norge?</button>`;
+      bildeSomByttes.style.width = "30rem";
+      bildeSomByttes.style.height = "auto";
+      bildeSomByttes.src = "./image copy.png";
+      bildeSomByttes.alt = "presidenten";
 
       // Legg til event listeners etter at innerHTML er satt
       document
@@ -136,6 +140,8 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
         <li>Rett til å leve som du og jeg</li>
         <li>De vil ha rett til menneskeverd</li>
       `;
+      bildeSomByttes.src = "./image copy.png";
+      bildeSomByttes.alt = "presidenten";
         meneskerILombo.style.padding = "25px";
       });
     });
@@ -152,7 +158,7 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
     console.log("KontaktOss clicked");
   
     meneskerILombo.innerHTML = `
-    <p>Vill du bli medlem eller har spørsmål Kontakt oss på telefon: <a href='tel:+4790038233'>90038238233</a></p>
+    <p>Vill du bli medlem eller har spørsmål Kontakt oss på telefon: <a href='tel:+4790038233'>telf.90038233</a></p>
     <p>Eller e-post: <a href='mailto:ketil_hindenes@hotmail.com'>ketil_hindenes@hotmail.com</a></p>
   `
     
