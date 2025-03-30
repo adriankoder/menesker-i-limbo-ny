@@ -47,7 +47,6 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
   liID.style.display = "none"; // Skjul liID
   bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
   bildeSomByttes.alt = "stand 19 okt 24 Torgallmenning";
-  folk.style.display = "none";
   console.log(liID);
 });
   VaneligeSpørsmål.addEventListener("click", () => {
@@ -59,13 +58,11 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
     // const vaneligSpørsmålHvorfor = document.getElementById(
     //   "vaneligSpørsmålHvorfor"
     // );
-    folk.style.display = "none"; // Skjul liID
     vaneligSpørsmålHvorfor.addEventListener("click", () => {
       meneskerILombo.innerHTML =
         "<p><li>Det er grove brudd på menneskerettigheter der jeg kommer fra.</li></p>" +
         "<p><li>Som kvinne mangler jeg rettigheter i hjemlandet mitt.</li></p>" +
         "<p><li>Mitt land er styrt av diktatur, og jeg er i fare for å bli satt i fengsel og torturert.</li></p>";
-      folk.style.display = "none";
       meneskerILombo.style.padding = "25px";
     });
     hvaVilDeOppnå.addEventListener("click", () => {
@@ -109,7 +106,6 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
     liID.style.display = "none"; // Skjul liID
     bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
     bildeSomByttes.alt = "stand 19 okt 24 Torgallmenning";
-    folk.style.display = "none";
     console.log(liID);
 
     VaneligeSpørsmål.addEventListener("click", () => {
@@ -128,7 +124,6 @@ I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfo
         <p><li>Som kvinne mangler jeg rettigheter i hjemlandet mitt.</li></p>
         <p><li>Mitt land er styrt av diktatur, og jeg er i fare for å bli satt i fengsel og torturert.</li></p>
       `;
-          folk.style.display = "none";
           meneskerILombo.style.padding = "25px";
         });
 
