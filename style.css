@@ -63,7 +63,7 @@ button {
   display: flex;
   flex-direction: row;
   /* justify-content: space-between; */
-  height: 50%;
+  height: auto;
   background-color: white;
 }
 iframe {
@@ -86,6 +86,8 @@ p {
 .bildeColum {
   display: flex;
   flex-direction: column;
+  width: 50rem;
+  height: auto;
 }
 .president {
   display: flex;
@@ -97,12 +99,7 @@ p {
   padding: 20px;
   /* padding-left: 50px; */
 }
-/* .folk_president {
-  display: flex;
-  flex-direction: row; */
-/* align-items: center; */
-/* margin-top: 0px;
-} */
+
 .bilde {
   display: flex;
   flex-direction: row;
