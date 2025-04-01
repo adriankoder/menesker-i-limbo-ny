@@ -7,9 +7,9 @@ const KontaktOss = document.getElementById("Kontakt");
 const folk = document.getElementById("folk");
 const HvaBetyrLimbo = document.getElementById("HvaBetyrLimbo");
 let bildeSomByttes = document.getElementById("president");
+const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 hovedside.addEventListener("click", () => {
-  console.log("hovedside clicked");
   bildeSomByttes.src = "./image copy.png";
   bildeSomByttes.alt = "presidenten";
   meneskerILombo.innerHTML = `<p>Mennesker i limbo Bergen er en organisasjon for lengeværende asylsøkere med endelig avslag. 
@@ -19,7 +19,6 @@ hovedside.addEventListener("click", () => {
   Vi kommer fra forskjellige land og har ulik bakgrunn.
   Det vi har felles, er at vi lever i Norge uten rett til:</p>`;
   liID.style.display = "block";
-  console.log(liID);
 });
 
 omArbeidet.addEventListener("click", () => {
@@ -45,14 +44,33 @@ men som utvikler seg til kroniske eller livstruende tilstander fordi de forblir 
 I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfordringer.`;
 bildeSomByttes.style.width = "30rem"
 bildeSomByttes.style.height = "30rem"
+// Opprett en media query for skjermbredde på maks 768px
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+// Funksjon som håndterer endringer i media query
+function handleMediaQueryChange(e) {
+  if (e.matches) {
+    meneskerILombo.style.padding = "10px";
+    bildeSomByttes.style.width = "15rem";
+    bildeSomByttes.style.height = "15rem";
+  } else {
+    meneskerILombo.style.padding = "25px";
+    bildeSomByttes.style.width = "30rem";
+    bildeSomByttes.style.height = "30rem";
+  }
+}
+
+// Legg til en event listener for å overvåke endringer i media query
+mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+// Kjør funksjonen én gang ved oppstart for å sette riktig stil
+handleMediaQueryChange(mediaQuery);
   liID.style.display = "none"; // Skjul liID
   bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
   bildeSomByttes.alt = "stand 19 okt 24 Torgallmenning";
-  console.log(liID);
 });
 
 VaneligeSpørsmål.addEventListener("click", () => {
-  console.log("VaneligeSpørsmål clicked");
   meneskerILombo.innerHTML = `
   <button id='vaneligSpørsmålHvorfor'>Hvorfor reiser de ikke bare tilbake?</button>
   <button id='hvaVilDeOppnå'>Hva vil de oppnå i Norge?</button>`;
@@ -98,7 +116,6 @@ HvaBetyrLimbo.addEventListener("click", () => {
 });
 
 KontaktOss.addEventListener("click", () => {
-  console.log("KontaktOss clicked");
   meneskerILombo.innerHTML = `
     <p>Vill du bli medlem eller har spørsmål Kontakt oss på telefon: <a href='tel:+4790038233'>telf.90038233</a></p>
     <p>Eller e-post: <a href='mailto:ketil_hindenes@hotmail.com'>ketil_hindenes@hotmail.com</a></p>`;
