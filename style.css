@@ -172,6 +172,7 @@ p {
   height: 100px;
 }
 .viktig {
+  width: 60%;
 padding: 10px;
 color: black;
 }
