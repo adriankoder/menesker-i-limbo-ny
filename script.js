@@ -60,12 +60,10 @@ function handleMediaQueryChange(e) {
   }
 }
 
-// Legg til en event listener for å overvåke endringer i media query
 mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-// Kjør funksjonen én gang ved oppstart for å sette riktig stil
 handleMediaQueryChange(mediaQuery);
-  liID.style.display = "none"; // Skjul liID
+  liID.style.display = "none";
   bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
   bildeSomByttes.alt = "stand 19 okt 24 Torgallmenning";
 });
@@ -75,7 +73,6 @@ VaneligeSpørsmål.addEventListener("click", () => {
   <button id='vaneligSpørsmålHvorfor'>Hvorfor reiser de ikke bare tilbake?</button>
   <button id='hvaVilDeOppnå'>Hva vil de oppnå i Norge?</button>`;
   
-  // Legg til event listeners etter at innerHTML er satt
   document.getElementById("vaneligSpørsmålHvorfor").addEventListener("click", () => {
     meneskerILombo.innerHTML = `
       <button id="tilbake">tilbake</button>
@@ -83,10 +80,8 @@ VaneligeSpørsmål.addEventListener("click", () => {
       <p><li>Som kvinne mangler jeg rettigheter i hjemlandet mitt.</li></p>
       <p><li>Mitt land er styrt av diktatur, og jeg er i fare for å bli satt i fengsel og torturert.</li></p>`;
     meneskerILombo.style.padding = "25px";
-
-    // Legg til event listener for "tilbake"-knappen
     document.getElementById("tilbake").addEventListener("click", () => {
-      VaneligeSpørsmål.click(); // Gjenopprett VaneligeSpørsmål
+      VaneligeSpørsmål.click();
     });
   });
 
@@ -101,9 +96,8 @@ VaneligeSpørsmål.addEventListener("click", () => {
       <li>De vil ha rett til menneskeverd</li>`;
     meneskerILombo.style.padding = "25px";
 
-    // Legg til event listener for "tilbake"-knappen
-    document.getElementById("tilbake").addEventListener("click", () => {
-      VaneligeSpørsmål.click(); // Gjenopprett VaneligeSpørsmål
+      document.getElementById("tilbake").addEventListener("click", () => {
+      VaneligeSpørsmål.click();
     });
   });
 });

@@ -21,9 +21,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 200px;
-    height: 200px; */
-    /* padding-bottom: 100px; */
   }
   .overskrift {
     display: flex;
@@ -43,14 +40,6 @@
     font-size: 40px;
     font-size: 40px;
   }
-  /* .overskrift {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-  } */
   button {
     width: 100%;
     height: auto;
@@ -121,7 +110,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     color: white;
     font-size: 40px;
     font-size: 40px;
@@ -150,8 +138,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-top: 0px;
-    margin: 5px;
-    width: 100%; */
   }
 }
