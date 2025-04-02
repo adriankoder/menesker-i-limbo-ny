@@ -12,7 +12,9 @@ const mediaQuery = window.matchMedia("(max-width: 768px)");
 hovedside.addEventListener("click", () => {
   bildeSomByttes.src = "./image copy.png";
   bildeSomByttes.alt = "presidenten";
-  meneskerILombo.innerHTML = `<p>Mennesker i limbo Bergen er en organisasjon for lengeværende asylsøkere med endelig avslag. 
+  bildeSomByttes.style.width = "30rem";
+  bildeSomByttes.style.height = "auto";
+  meneskerILombo.innerHTML =`<p>Mennesker i limbo Bergen er en organisasjon for lengeværende asylsøkere med endelig avslag. 
   Vi kjemper for å bedre vår situasjon.
   Gruppen vår består av både kvinner og menn.
   Noen av oss har barn, andre kom til Norge som mindreårige.
@@ -21,7 +23,10 @@ hovedside.addEventListener("click", () => {
   liID.style.display = "block";
 });
 
-omArbeidet.addEventListener("click", () => {
+omArbeidet.addEventListener("click", () => { 
+  bildeSomByttes.style.width = "30rem"
+bildeSomByttes.style.height = "30rem"
+  bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
   meneskerILombo.innerHTML = `<p> Hvem er vi?
   Gruppen består av lengeværende papirløse asylsøkere, inkludert kvinner, menn og barn, som har flyktet til Norge. De kjemper for:</p>
 
@@ -42,8 +47,6 @@ Både psykisk og somatisk helse kan være dårlig.
 De kan ha helsetilstander som kunne vært behandlet,
 men som utvikler seg til kroniske eller livstruende tilstander fordi de forblir ubehandlet.
 I mange tilfeller dreier det seg om omfattende psykososiale og helsemessige utfordringer.`;
-bildeSomByttes.style.width = "30rem"
-bildeSomByttes.style.height = "30rem"
 // Opprett en media query for skjermbredde på maks 768px
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
@@ -66,9 +69,14 @@ handleMediaQueryChange(mediaQuery);
   liID.style.display = "none";
   bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
   bildeSomByttes.alt = "stand 19 okt 24 Torgallmenning";
+  bildeSomByttes.style.width = "30rem"
+bildeSomByttes.style.height = "30rem"
 });
 
 VaneligeSpørsmål.addEventListener("click", () => {
+  bildeSomByttes.src = "./image copy.png";
+  bildeSomByttes.style.width = "30rem";
+  bildeSomByttes.style.height = "auto";
   meneskerILombo.innerHTML = `
   <button id='vaneligSpørsmålHvorfor'>Hvorfor reiser de ikke bare tilbake?</button>
   <button id='hvaVilDeOppnå'>Hva vil de oppnå i Norge?</button>`;
@@ -103,6 +111,9 @@ VaneligeSpørsmål.addEventListener("click", () => {
 });
 
 HvaBetyrLimbo.addEventListener("click", () => {
+  bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
+  bildeSomByttes.style.width = "30rem"
+  bildeSomByttes.style.height = "30rem"
   meneskerILombo.innerHTML = `Limbo beskrives som en mellomtilstand eller en tilstand av lammelse,
   hvor papirløse asylsøkere verken kan reise tilbake til hjemlandet eller starte et nytt liv i Norge. 
   Det oppleves som håpløst og uten mulighet for endring.
@@ -110,6 +121,9 @@ HvaBetyrLimbo.addEventListener("click", () => {
 });
 
 KontaktOss.addEventListener("click", () => {
+  bildeSomByttes.src = "./stand 19 okt 24 Torgallmenning.jpg";
+bildeSomByttes.style.width = "30rem"
+bildeSomByttes.style.height = "30rem"
   meneskerILombo.innerHTML = `
     <p>Vill du bli medlem eller har spørsmål Kontakt oss på telefon: <a href='tel:+4790038233'>telf.90038233</a></p>
     <p>Eller e-post: <a href='mailto:ketil_hindenes@hotmail.com'>ketil_hindenes@hotmail.com</a></p>`;
