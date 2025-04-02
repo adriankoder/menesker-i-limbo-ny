@@ -73,6 +73,7 @@ p {
   align-items: center;
   width: 200px;
   height: 200px;
+  padding-top: 30px;
 }
 .bildeColum {
   display: flex;
